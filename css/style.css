@@ -1302,7 +1302,7 @@ body.video #videobg {
     position: relative;
     font-weight: 700;
     font-size: 38px;
-    line-height: 38px;
+    line-height: 50px;
     font-family: "Playfair Display", serif;
     margin: 0;
 }
@@ -1316,7 +1316,7 @@ body.video #videobg {
 }
 
 .work-section .details ul {
-    margin: 35px 0;
+    margin: -20px 0px 0px;
 }
 
 .work-section .details ul li {
@@ -1728,6 +1728,12 @@ body.video #videobg {
     color: #212529;
 }
 
+/* Hide Blog */
+.blog-section {
+    display: none !important;
+}
+
+
 /* [ RESPONSIVE DESIGN ] */
 
 /*================================================== */
@@ -1989,4 +1995,5 @@ body.video #videobg {
     .personal-list-container.personal-list-container-2 ul {
         margin-top: 0;
     }
+
 }
