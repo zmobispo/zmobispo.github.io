@@ -6,7 +6,7 @@ if (isset($_REQUEST['name'],$_REQUEST['email'])) {
     $message = $_REQUEST['message'];
 
     // Set your email address where you want to receive emails.
-    $to = 'yourmail@mail.com';
+    $to = 'zmobispo@gmail.com';
 	
 	// Set your subject here.
 	$subject = 'Contact From My Website';
