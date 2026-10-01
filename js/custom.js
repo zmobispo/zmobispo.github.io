@@ -253,17 +253,25 @@ $(function() {
         return false;
     });
 
-    $(window).on("load", function() {
+/* ----------------------------------------------------------- */
+    /*  PAGE PRELOADER
+    /* ----------------------------------------------------------- */
 
-        /* ----------------------------------------------------------- */
-        /*  PAGE PRELOADER
-        /* ----------------------------------------------------------- */
+    function handlePreloader() {
+        $("body").addClass("loaded");
+    }
 
-        $("body").toggleClass("loaded");
-        setTimeout(function() {
-            $("body").addClass("loaded");
-        }, 3000);
+    if (document.readyState === "complete") {
+        handlePreloader();
+    } else {
+        $(window).on("load", handlePreloader);
+    }
 
+    // Handle browser back-forward cache issues
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+            handlePreloader();
+        }
     });
 
     $(window).on('resize',function(){
