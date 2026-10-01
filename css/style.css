@@ -592,6 +592,18 @@ body.dark .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
     animation: cd-bounce-in 0.3s linear;
 }
 
+/* Keep the navigation menu permanently open */
+#navigation.is-fixed ul {
+    visibility: visible !important;
+    transform: scale(1) !important;
+}
+
+/* Optional: hide the hamburger button */
+#navigation .navigation-trigger {
+    display: none;
+}
+
+
 /* [ SECTIONS ] */
 
 /*================================================== */
